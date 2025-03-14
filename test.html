@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WayneTech Systems - Test Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>WayneTech Systems</h1>
+        <nav>
+            <ul>
+                <li><a href="#contact" onclick="openTab(event, 'contact')">Contact</a></li>
+                <li><a href="#billing" onclick="openTab(event, 'billing')">Billing</a></li>
+                <li><a href="#gallery" onclick="openTab(event, 'gallery')">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact" class="tab-content">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="notes">Notes:</label>
+                <textarea id="notes" name="notes" rows="4" required></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <section id="billing" class="tab-content">
+            <h2>Billing</h2>
+            <p>Payment processing will be available soon.</p>
+            <!-- Placeholder for Square payment integration -->
+            <div id="square-payment">
+                <p>Square payment form coming soon.</p>
+            </div>
+        </section>
+        <section id="gallery" class="tab-content">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="image1.jpg" alt="Previous Job 1">
+                <img src="image2.jpg" alt="Previous Job 2">
+                <img src="image3.jpg" alt="Previous Job 3">
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 WayneTech Systems. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
